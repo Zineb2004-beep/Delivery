@@ -1,0 +1,103 @@
+/* Custom styles for AZ Delivery */
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    margin-top: -1.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Restaurant cards */
+.restaurant-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 1.5rem;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+.restaurant-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Category badges */
+.category-badge {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem;
+    border-radius: 20px;
+}
+
+/* Custom buttons */
+.btn-order {
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+/* Cart badge */
+.cart-badge {
+    position: relative;
+    top: -8px;
+    right: 5px;
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+    border-radius: 50%;
+}
+
+/* Auth forms */
+.auth-form {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard sections */
+.dashboard-stats {
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Order status badges */
+.status-pending {
+    background-color: #ffc107;
+}
+
+.status-preparing {
+    background-color: #17a2b8;
+}
+
+.status-delivering {
+    background-color: #007bff;
+}
+
+.status-completed {
+    background-color: #28a745;
+}
+
+.status-cancelled {
+    background-color: #dc3545;
+}
